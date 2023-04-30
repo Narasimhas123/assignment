@@ -1,0 +1,32 @@
+body {
+    background-color: #a92222; /* set background color */
+    background-image: url("background-image.jpg"); /* set background image */
+    background-repeat: no-repeat; /* prevent image from repeating */
+    background-attachment: fixed; /* keep image in place */
+    background-size: cover; /* specify image size */
+  }
+  div {
+  border-top: 1px dashed #ccc; /* set top border to dashed line */
+  border-right: 3px dotted #f7f7f7; /* set right border to dotted line */
+  border-bottom: 2px solid #333; /* set bottom border to solid line */
+  border-left: 5px double #999; /* set left border to double line */
+}
+#pixel-height {
+  height: 100px; /* set height to 100 pixels */
+  width: 50%; /* set width to 50% of parent element */
+  background-color: #f7f7f7;
+}
+
+#percent-height {
+  height: 25%; /* set height to 25% of parent element */
+  width: 300px; /* set width to 300 pixels */
+  background-color: #ccc;
+}
+h1 {
+font-size: 36px; /* set font size */
+font-family: Arial, sans-serif; /* set font family */
+font-weight: bold; /* set font weight */
+color: #333; /* set font color */
+text-align: center; /* set text alignment */
+}
+  

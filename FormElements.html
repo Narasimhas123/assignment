@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br>
+
+		<input type="radio" id="option1" name="option" value="option1">
+		<label for="option1">Option 1</label><br>
+
+		<input type="radio" id="option2" name="option" value="option2">
+		<label for="option2">Option 2</label><br>
+
+		<input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+		<label for="checkbox1">Checkbox 1</label><br>
+
+		<input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+		<label for="checkbox2">Checkbox 2</label><br>
+
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		<button>Button</button>
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+		<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+		<label for="range">Range (between 0 and 10):</label>
+		<input type="range" id="range" name="range" min="0" max="10"><br>
+
+		<label for="color">Color:</label>
+		<input type="color" id="color" name="color"><br>
+
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date"><br>
+
+		<label for="file">File:</label>
+		<input type="file" id="file" name="file"><br>
+
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time"><br>
+
+		<label for="month">Month:</label>
+		<input type="month" id="month" name="month"><br>
+
+		<label for="week">Week:</label>
+		<input type="week" id="week" name="week"><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+
+        <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="18" max="99" value="25"><br>
+
+  <label for="zipcode">Zipcode:</label>
+  <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required><br>
+
+  <label for="description">Description:</label><br>
+  <textarea id="description" name="description" rows="4" cols="50" readonly>Some text here</textarea><br>
+
+  <label for="disabledInput">Disabled Input:</label>
+  <input type="text" id="disabledInput" name="disabledInput" disabled value="This input is disabled"><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+	</form>
+
+    <p><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Learn more about cats!</a></p>
+    <marquee behavior="scroll" direction="left">This text is scrolling from left to right</marquee>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315"></iframe>
+</body>
+</html>

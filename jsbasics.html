@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sortFruits()">Sort Fruits</button>
+<script>
+    // This is a single-line comment
+
+/*
+This is a 
+multi-line 
+comment
+*/
+
+  let fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry"];
+  
+  function sortFruits() {
+    fruits.sort().reverse();
+    console.log(fruits);
+  }
+  const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  city: "New York"
+};
+
+for (let prop in person) {
+  console.log(`${prop}: ${person[prop]}`);
+}
+const person2 = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+// Method 1: Dot notation
+console.log(person2.firstName);
+console.log(person2.lastName);
+
+// Method 2: Bracket notation
+console.log(person2["firstName"]);
+console.log(person2["lastName"]);
+
+//hosting
+console.log(myVar); // undefined
+var myVar = "Hello World!";
+console.log(a)//reffrence error temprol dead zone
+let a=10;
+
+"use strict";
+x = 42; // Uncaught ReferenceError: x is not defined
+
+</script>
+</body>
+</html>

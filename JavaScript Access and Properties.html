@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="hideButton()" id="l">Click to hide me</button>
+    <button onclick="count()">Count</button>
+<p>Count: <span id="counter1">0</span></p>
+<button onclick="count()">Count</button>
+<p>Count: <span id="counter">0</span></p>
+
+<script>
+    function hideButton() {
+  l.style.display = 'none';
+}
+function greet(name) {
+  console.log(`Hello, ${name}! My name is ${this.name}.`);
+}
+
+let person = {name: 'John'};
+
+greet.call(person, 'Mary');
+// Output: Hello, Mary! My name is John.
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+let numbers = [1, 2, 3];
+
+let result = sum.apply(null, numbers);
+// Output: 6
+let counter1 = 0;
+let counterElement = document.getElementById("counter1");
+
+function count() {
+  counter1++;
+  counterElement.textContent = counter1;
+}
+let counter = {
+  count: 0,
+  get value() {
+    return this.count;
+  },
+  set value(val) {
+    this.count = val;
+    document.getElementById("counter").textContent = this.count;
+  }
+};
+
+function count() {
+  counter.value++;
+}
+function Rectangle(length, width) {
+  this.length = length;
+  this.width = width;
+}
+
+Rectangle.prototype.area = function() {
+  return this.length * this.width;
+};
+
+Rectangle.prototype.perimeter = function() {
+  return 2 * (this.length + this.width);
+};
+
+let rect = new Rectangle(5, 10);
+
+console.log(rect.area()); // Output: 50
+console.log(rect.perimeter()); // Output: 30
+
+
+</script>
+</body>
+</html>
